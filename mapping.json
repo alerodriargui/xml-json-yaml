@@ -1,0 +1,10 @@
+{
+  "gender": "sexo",
+  "name": "nombre",
+  "alter": "apodos",
+  "surname1": "apellido1",
+  "surname2": "apellido2",
+  "birth": "fecha",
+  "fathername": "padre",
+  "mothername": "madre"
+}

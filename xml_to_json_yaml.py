@@ -155,8 +155,13 @@ def main():
         # also remove references from parent (if present)
         # works on CPython's ElementTree: try to delete previous siblings
         # (safe to ignore if unsupported)
-        while elem.getprevious() is not None:
-            del elem.getparent()[0]
+        # Optional deeper cleanup (only if lxml available)
+        try:
+            while elem.getprevious() is not None:
+                del elem.getparent()[0]
+        except AttributeError:
+            pass  # standard ElementTree does not support getprevious/getparent
+
 
     # close writers
     for w in json_writers.values():

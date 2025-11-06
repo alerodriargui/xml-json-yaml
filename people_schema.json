@@ -1,0 +1,14 @@
+{
+  "root": "people",
+  "record": "person",
+  "fields": [
+    {"name": "gender", "type": "string"},
+    {"name": "name", "type": "string"},
+    {"name": "alter", "type": "string"},
+    {"name": "surname1", "type": "string"},
+    {"name": "surname2", "type": "string"},
+    {"name": "birth", "type": "date"},
+    {"name": "fathername", "type": "string"},
+    {"name": "mothername", "type": "string"}
+  ]
+}
