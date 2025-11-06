@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 xml_to_json_yaml.py
-Stream AllPeople (1).xml and create one JSON + one YAML file per birth year.
+Stream AllPeople.xml and create one JSON + one YAML file per birth year.
 Translate tag names using an external mapping file (json/yaml/xml).
 """
 import json, xml.etree.ElementTree as ET
